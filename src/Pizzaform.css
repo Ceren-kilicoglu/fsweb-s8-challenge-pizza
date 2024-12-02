@@ -1,0 +1,273 @@
+.pizza-form {
+    background-color: #fff;
+    padding: 150px;
+    padding-right: 0;
+    max-width: 550px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pizza-form h2 {
+    text-align: left;
+    color: black;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.price {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.price-like {
+    display: flex;
+    gap: 65px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 15px;
+}
+
+
+.description {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #5F5F5F;
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+.selection-row {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 230px;
+}
+
+.pizza-form h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+}
+
+h4::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}
+
+.pizza-form p {
+    text-align: left;
+    margin-top: auto;
+}
+
+.pizza-form label {
+    margin-bottom: 7px;
+}
+
+.pizza-form .options-column {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #5F5F5F;
+    font-weight: 400;
+
+}
+
+.pizza-form .options-column label {
+    display: flex;
+    align-items: center;
+}
+
+.pizza-form .options-column input[type="radio"] {
+    margin-right: 25px;
+}
+
+
+
+.pizza-form select {
+    padding: 2px;
+}
+
+.option-number {
+    color: #5F5F5F;
+    font-weight: 400;
+
+}
+
+
+.note-row {
+    padding: 10px 0;
+}
+
+
+
+
+.pizza-form textarea,
+.pizza-form input[type="number"] {
+    padding: 15px;
+    width: 500px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+
+}
+
+.pizza-form textarea::placeholder {
+    color: #5F5F5F;
+
+
+}
+
+
+.toppings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    gap: 10px;
+    padding-top: 35px;
+    color: #5F5F5F;
+    font-weight: 700;
+
+
+
+}
+
+
+/* General Pizza Form Styling */
+
+
+/* Order Section */
+.pizza-form .order {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Quantity Control Section */
+.pizza-form .quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: -170px;
+
+}
+
+/* Buttons in Quantity Control */
+.pizza-form .quantity-control button {
+    background-color: #FDC913;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Quantity Display */
+.pizza-form .quantity-control span {
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid rgb(244, 240, 240);
+    padding: 11px 15px;
+    border-radius: 5px;
+
+
+}
+
+/* Order Summary Section */
+.pizza-form .order-summary {
+    padding-top: 15px;
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Summary Box Styling */
+.pizza-form .order-summary-info {
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 6px;
+    padding: 30px;
+    background-color: #f9f9f9;
+
+}
+
+/* Total Price Styling */
+.pizza-form .order-total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #292929;
+    margin-left: 55px;
+
+}
+
+/* User Selection Info Styling */
+
+.pizza-form .user-selection,
+.pizza-form .user-amount {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+/* User Selection Styling */
+.pizza-form .user-selection {
+    color: #5F5F5F;
+    font-weight: 600;
+    gap: 10px;
+}
+
+/* Amount Styling */
+.pizza-form .user-amount {
+    color: #CE2829;
+    font-weight: 600;
+    gap: 10px;
+}
+
+/* Order Button Styling */
+.pizza-form .order-button {
+    background-color: #FDC913;
+    color: black;
+    border: 1px solid #FDC913;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+    width: 95%;
+    text-align: center;
+
+}
+
+
+/* Error Message Styling */
+.error {
+    color: #D32F2F;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Horizontal Line Styling */
+hr {
+    border: none;
+    border-top: 2px solid rgb(211, 209, 209);
+    margin: 20px 0;
+}

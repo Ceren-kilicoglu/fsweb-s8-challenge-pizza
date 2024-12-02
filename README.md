@@ -114,7 +114,7 @@ Zamanı verimli kullanmak için aşağıdaki sırayla geliştirme yapmanı tavsi
 
 Logo proje klasöründe SVG olarak yüklü
 
-- [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
+- [Roboto Condensed](://httpsfonts.google.com/specimen/Roboto+Condensed)
 - [Barlow](https://fonts.google.com/specimen/Barlow)
 - [Quattrocento](https://fonts.google.com/specimen/Quattrocento)
 - [Satisfy](https://fonts.google.com/specimen/Satisfy)

@@ -1,0 +1,26 @@
+.container {
+    height: 100vh;
+    background-color: #CE2829;
+
+}
+
+.success-messages {
+    text-align: center;
+    color: white;
+    font-size: 4.5rem;
+    line-height: 0.5rem;
+    padding-top: 125px;
+    font-weight: 100;
+
+}
+
+
+.logo-success {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding-top: 100px;
+
+
+
+}
