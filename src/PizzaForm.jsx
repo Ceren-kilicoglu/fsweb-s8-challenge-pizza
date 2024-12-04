@@ -5,6 +5,7 @@ import Header from './Header'
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 function PizzaForm() {
     const [size, setSize] = useState('');
@@ -235,7 +236,7 @@ function PizzaForm() {
                     </label>
                 </form> {/* Form kapanışı */}
             </div>
-
+          <Footer/>
         </>
     );
 }
