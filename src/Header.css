@@ -1,6 +1,6 @@
 .header {
     background-color: #CE2829;
-    padding: 50px;
+    padding: 25px;
     text-align: center;
     border-radius: 0;
     position: absolute;
@@ -13,43 +13,4 @@
 
 .logo-header {
     height: 45px;
-
-
-}
-
-
-.header-content {
-    max-width: 550px;
-    margin: 0 auto;
-    height: 75px;
-
-}
-
-
-.nav-list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    gap: 10px;
-    margin: 30px;
-
-
-
-
-}
-
-
-.nav-list a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 15px;
-    transition: color 0.3s ease;
-
-
-}
-
-.nav-list a:hover {
-    color: white;
-    font-weight: bold;
-
 }

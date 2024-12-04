@@ -1,55 +1,105 @@
-.pizza-form {
-    background-color: #fff;
-    padding: 150px;
+.nav-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    padding-right: 290px;
+
+
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: color 0.1s ease;
+
+
+}
+
+.nav-list a:hover {
+    color: #CE2829;
+    font-weight: bold;
+
+}
+
+.header-row {
+    background-color: rgb(248, 246, 242);
+    padding: 10px;
     padding-right: 0;
-    max-width: 550px;
+    width: 100%;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
-.pizza-form h2 {
-    text-align: left;
+.header-row h2 {
     color: black;
-    padding-top: 20px;
     font-weight: 500;
+    padding-right: 170px;
+
 }
+
+
 
 .price {
-    text-align: left;
     color: black;
     font-weight: bold;
     font-size: 27px;
     display: flex;
-    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 550px;
+    padding-left: 50px;
+
 }
 
 .price-like {
     display: flex;
     gap: 65px;
-    margin-left: 350px;
-    margin-bottom: 20px;
     color: #999;
     font-size: 15px;
+    padding-left: 300px;
+    padding-top: 17px;
+
+
+}
+
+.description {
+    width: 80%;
+    max-width: 550px;
+    height: 120px;
+    padding: 10px;
+    padding-left: 90px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 
-.description {
-    text-align: left;
-    margin-bottom: 20px;
-    color: #5F5F5F;
-    font-size: 16px;
-    line-height: 1.7;
+
+.pizza-form {
+    background-color: white;
+
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10px;
 
 }
 
 .selection-row {
     display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    gap: 230px;
 }
 
 .pizza-form h4 {
@@ -81,7 +131,6 @@ h4::after {
     gap: 7px;
     color: #5F5F5F;
     font-weight: 400;
-
 }
 
 .pizza-form .options-column label {
@@ -93,62 +142,58 @@ h4::after {
     margin-right: 25px;
 }
 
-
-
 .pizza-form select {
-    padding: 2px;
+    padding: 10px;
+    /* Paddingi artırarak daha rahat bir kullanım sağlar */
+    width: 100%;
+    /* Tam genişlik */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Yuvarlatılmış kenarlar */
+    box-sizing: border-box;
+    /* Box modelinde padding'i dahil et */
 }
 
 .option-number {
     color: #5F5F5F;
     font-weight: 400;
-
 }
-
 
 .note-row {
     padding: 10px 0;
 }
 
-
-
-
 .pizza-form textarea,
 .pizza-form input[type="number"] {
     padding: 15px;
-    width: 500px;
+    width: 100%;
+    /* Genişliği %100 yaparak responsif hale getir */
+    max-width: 500px;
+    /* Maksimum genişlik */
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     resize: none;
-
+    box-sizing: border-box;
+    /* Box modelinde padding'i dahil et */
 }
 
 .pizza-form textarea::placeholder {
     color: #5F5F5F;
-
-
 }
-
 
 .toppings-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
+    /* Grid öğeleri daha esnek hale getir */
     text-align: left;
     gap: 10px;
     padding-top: 35px;
     color: #5F5F5F;
     font-weight: 700;
-
-
-
 }
 
-
-/* General Pizza Form Styling */
-
-
-/* Order Section */
 .pizza-form .order {
     display: flex;
     gap: 12px;
@@ -156,15 +201,13 @@ h4::after {
     margin-top: 20px;
 }
 
-/* Quantity Control Section */
 .pizza-form .quantity-control {
     display: flex;
     align-items: center;
-    margin-top: -170px;
-
+    margin-top: 0;
+    /* Eski değeri kaldırarak düzeni daha tutarlı yap */
 }
 
-/* Buttons in Quantity Control */
 .pizza-form .quantity-control button {
     background-color: #FDC913;
     border: none;
@@ -177,71 +220,57 @@ h4::after {
     transition: background-color 0.3s ease;
 }
 
-
-
-/* Quantity Display */
 .pizza-form .quantity-control span {
     font-size: 18px;
     font-weight: bold;
     border: 1px solid rgb(244, 240, 240);
     padding: 11px 15px;
     border-radius: 5px;
-
-
 }
 
-/* Order Summary Section */
 .pizza-form .order-summary {
     padding-top: 15px;
-    width: 140%;
+    width: 100%;
+    /* %100 genişlik ile container'ı tam doldur */
+    max-width: 800px;
+    /* Maksimum genişlik */
     display: flex;
     flex-direction: column;
-
 }
 
-/* Summary Box Styling */
 .pizza-form .order-summary-info {
     border: 1px solid rgb(215, 213, 213);
     border-radius: 6px;
     padding: 30px;
     background-color: #f9f9f9;
-
 }
 
-/* Total Price Styling */
 .pizza-form .order-total {
     font-weight: bold;
     font-size: 1.2rem;
     color: #292929;
     margin-left: 55px;
-
 }
-
-/* User Selection Info Styling */
 
 .pizza-form .user-selection,
 .pizza-form .user-amount {
     display: flex;
-    justify-content: space-around;
-
-
+    justify-content: space-between;
+    /* Düzgün yerleştirme */
 }
 
-/* User Selection Styling */
 .pizza-form .user-selection {
     color: #5F5F5F;
     font-weight: 600;
     gap: 10px;
 }
 
-/* Amount Styling */
 .pizza-form .user-amount {
     color: #CE2829;
     font-weight: 600;
     gap: 10px;
 }
 
-/* Order Button Styling */
 .pizza-form .order-button {
     background-color: #FDC913;
     color: black;
@@ -249,25 +278,32 @@ h4::after {
     cursor: pointer;
     font-size: 16px;
     border-radius: 7px;
-    padding: 8px 10px;
+    padding: 8px 0;
     transition: background-color 0.3s ease;
-    width: 95%;
+    width: 100%;
+    /* Tam genişlik */
+    max-width: 400px;
+    /* Maksimum genişlik */
     text-align: center;
-
 }
 
-
-/* Error Message Styling */
 .error {
     color: #D32F2F;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 10px;
     font-weight: bold;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
-/* Horizontal Line Styling */
 hr {
     border: none;
     border-top: 2px solid rgb(211, 209, 209);
     margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
 }

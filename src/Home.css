@@ -36,3 +36,36 @@ button {
     font-weight: 600;
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+
+
+    .background {
+        height: auto;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .logo-homebanner {
+        padding-top: 20px;
+
+    }
+
+
+    .home-text {
+        font-size: 1rem;
+        margin-bottom: 100px;
+
+    }
+
+
+    button {
+        padding: 10px 30px;
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+}
