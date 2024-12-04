@@ -25,7 +25,7 @@
 }
 
 .header-row {
-    background-color: rgb(239, 235, 226);
+    background-color: #FAF7F2;
     padding: 10px;
     padding-right: 0;
     width: 100%;
@@ -87,7 +87,7 @@
 .pizza-form {
     background-color: white;
 
-    width: 100%;
+    width: 0;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -100,6 +100,7 @@
 
 .selection-row {
     display: flex;
+
 }
 
 .pizza-form h4 {
@@ -136,6 +137,7 @@ h4::after {
 .pizza-form .options-column label {
     display: flex;
     align-items: center;
+
 }
 
 .pizza-form .options-column input[type="radio"] {
@@ -144,15 +146,13 @@ h4::after {
 
 .pizza-form select {
     padding: 10px;
-    /* Paddingi artırarak daha rahat bir kullanım sağlar */
     width: 100%;
-    /* Tam genişlik */
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid#f9f9f9;
     border-radius: 5px;
-    /* Yuvarlatılmış kenarlar */
     box-sizing: border-box;
-    /* Box modelinde padding'i dahil et */
+    background-color: #FAF7F2;
+
 }
 
 .option-number {
@@ -168,15 +168,14 @@ h4::after {
 .pizza-form input[type="number"] {
     padding: 15px;
     width: 100%;
-    /* Genişliği %100 yaparak responsif hale getir */
     max-width: 500px;
-    /* Maksimum genişlik */
     margin-top: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #FAF7F2;
+    background-color: #FAF7F2;
     border-radius: 8px;
     resize: none;
     box-sizing: border-box;
-    /* Box modelinde padding'i dahil et */
+
 }
 
 .pizza-form textarea::placeholder {
@@ -186,13 +185,13 @@ h4::after {
 .toppings-grid {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    /* Grid öğeleri daha esnek hale getir */
     text-align: left;
     gap: 10px;
     padding-top: 35px;
     color: #5F5F5F;
     font-weight: 700;
 }
+
 
 .pizza-form .order {
     display: flex;
@@ -205,7 +204,7 @@ h4::after {
     display: flex;
     align-items: center;
     margin-top: 0;
-    /* Eski değeri kaldırarak düzeni daha tutarlı yap */
+
 }
 
 .pizza-form .quantity-control button {
@@ -223,7 +222,8 @@ h4::after {
 .pizza-form .quantity-control span {
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid rgb(244, 240, 240);
+    border: 1px solid #FAF7F2;
+    background-color: #FAF7F2;
     padding: 11px 15px;
     border-radius: 5px;
 }
@@ -231,9 +231,7 @@ h4::after {
 .pizza-form .order-summary {
     padding-top: 15px;
     width: 100%;
-    /* %100 genişlik ile container'ı tam doldur */
     max-width: 800px;
-    /* Maksimum genişlik */
     display: flex;
     flex-direction: column;
 }
@@ -242,7 +240,7 @@ h4::after {
     border: 1px solid rgb(215, 213, 213);
     border-radius: 6px;
     padding: 30px;
-    background-color: #f9f9f9;
+    background-color: #FAF7F2;
 }
 
 .pizza-form .order-total {
@@ -256,7 +254,7 @@ h4::after {
 .pizza-form .user-amount {
     display: flex;
     justify-content: space-between;
-    /* Düzgün yerleştirme */
+
 }
 
 .pizza-form .user-selection {
@@ -281,9 +279,7 @@ h4::after {
     padding: 8px 0;
     transition: background-color 0.3s ease;
     width: 100%;
-    /* Tam genişlik */
     max-width: 400px;
-    /* Maksimum genişlik */
     text-align: center;
 }
 

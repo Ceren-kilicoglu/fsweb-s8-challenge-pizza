@@ -1,26 +1,111 @@
-.container {
-    height: 100vh;
+.order-confirmation {
+    height: 115vh;
     background-color: #CE2829;
 
 }
 
-.success-messages {
-    text-align: center;
-    color: white;
-    font-size: 4.5rem;
-    line-height: 0.5rem;
-    padding-top: 125px;
-    font-weight: 100;
-
-}
-
-
 .logo-success {
     display: flex;
     justify-content: center;
-    height: 40px;
-    padding-top: 100px;
+    height: 35px;
+    padding-top: 30px;
+}
+
+.success-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0;
+    padding-top: 60px;
+
+}
+
+.success-messages .subtitle {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FDC913;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.success-messages p {
+    color: white;
+    font-size: 55px;
+    margin-top: 0;
+    line-height: 1.1;
+
+}
+
+.success-messages hr {
+    margin-top: -15px;
+    width: 410px;
+    padding-top: 5px;
+}
+
+.user-pizza-selection h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.user-pizza-selection p {
+    text-align: left;
+    max-width: 200px;
+    margin: 0 auto;
+    line-height: 35px;
+    font-size: 15px;
+    color: white;
+}
+
+.user-pizza-selection .added-list {
+    line-height: 20px;
+}
+
+.order-summary {
+    padding-top: 15px;
+    padding-left: 600px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.order-summary-info {
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.order-total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    padding-right: 75px;
 
 
+}
 
+.user-selection,
+.user-amount {
+    display: flex;
+    justify-content: space-between;
+    line-height: 10px;
+
+}
+
+.user-selection {
+    color: white;
+    font-weight: 600;
+    gap: 100px;
+}
+
+.user-amount {
+    color: white;
+    font-weight: 600;
+    gap: 100px;
 }

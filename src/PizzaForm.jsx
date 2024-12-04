@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
 import './pizzaform.css';
 import './header.css';
-import Header from './Header'
+import Header from './Header';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -22,7 +22,11 @@ function PizzaForm() {
     const [isFormValid, setIsFormValid] = useState(true);
     const [name, setName] = useState('Ceren');
 
-    const availableToppings = ['Pepperoni', 'Sosis', 'Kanada Jambonu', 'Tavuk Izgara', 'Soğan', 'Domates', 'Mısır', 'Jalapeno', 'Sarımsak', 'Biber', 'Sucuk', 'Ananas', 'Kabak'];
+
+    const availableToppings = [
+        'Pepperoni', 'Sosis', 'Kanada Jambonu', 'Tavuk Izgara', 'Soğan', 'Domates', 'Mısır',
+        'Jalapeno', 'Sarımsak', 'Biber', 'Sucuk', 'Ananas', 'Kabak'
+    ];
     const history = useHistory();
 
     // Toppings seçimi
@@ -32,7 +36,7 @@ function PizzaForm() {
                 setToppings([...toppings, topping]);
             }
         } else {
-            setToppings(toppings.filter((item) => item !== topping));  // Uncheck malzemeleri çıkar
+            setToppings(toppings.filter((item) => item !== topping));
         }
     }
 
@@ -65,7 +69,6 @@ function PizzaForm() {
 
         // Quantity kontrolü
         if (quantity <= 0) {
-
             valid = false;
         } else {
             setQuantityError('');
@@ -110,6 +113,7 @@ function PizzaForm() {
             });
     }
 
+
     useEffect(() => {
         if (hasAttemptedSubmit) {
             validateForm();
@@ -146,23 +150,22 @@ function PizzaForm() {
             </div>
 
             <div className='pizza-form'>
-                <form onSubmit={handleSubmit}> {/* onSubmit burada form elementine eklendi */}
+                <form onSubmit={handleSubmit}>
                     <div className="selection-row">
                         <label>
                             <h4>Boyut Seç  </h4>
                             <div className="options-column">
-                                <label>
-                                    <input type="radio" value="Küçük" checked={size === 'Küçük'} onChange={(e) => setSize(e.target.value)} />
-                                    Küçük
-                                </label>
-                                <label>
-                                    <input type="radio" value="Orta" checked={size === 'Orta'} onChange={(e) => setSize(e.target.value)} />
-                                    Orta
-                                </label>
-                                <label>
-                                    <input type="radio" value="Büyük" checked={size === 'Büyük'} onChange={(e) => setSize(e.target.value)} />
-                                    Büyük
-                                </label>
+                                {['Küçük', 'Orta', 'Büyük'].map((option) => (
+                                    <label key={option}>
+                                        <input
+                                            type="checkbox"
+                                            value={option}
+                                            checked={size === option}
+                                            onChange={(e) => setSize(e.target.value)}
+                                        />
+                                        {option}
+                                    </label>
+                                ))}
                             </div>
                             {hasAttemptedSubmit && sizeError && <p className="error">{sizeError}</p>}
                         </label>
@@ -170,7 +173,7 @@ function PizzaForm() {
                             <div className='select-row'>
                                 <h4>Hamur Seç  </h4>
                                 <select value={crust} onChange={(e) => setCrust(e.target.value)}>
-                                    <option value="Hamur Kalınlığı">Hamur Kalınlığı</option>
+                                    <option value="Hamur Kalınlığı-">Hamur Kalınlığı</option>
                                     <option value="İnce">İnce</option>
                                     <option value="Kalın">Kalın</option>
                                 </select>
@@ -234,9 +237,9 @@ function PizzaForm() {
                             </div>
                         </div>
                     </label>
-                </form> {/* Form kapanışı */}
+                </form>
             </div>
-          <Footer/>
+            <Footer />
         </>
     );
 }
