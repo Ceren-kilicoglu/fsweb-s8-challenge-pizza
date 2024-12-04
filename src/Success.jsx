@@ -20,21 +20,22 @@ function Success() {
                     <p>Hamur: <strong>Süper ince</strong></p>
                     <p className='added-list'>Ek Malzemeler: <strong>Pepperoni, Sosis, Mısır, Ananas, Jalapeno</strong> </p>
                 </div>
-                <div className="order-summary">
-                    <div className='order-summary-info'>
-                        <div className='order-total'>
+                <div className="order-summary-success">
+                    <div className="order-summary-info-success">
+                        <div className="order-total-success">
                             <p>Sipariş Toplamı</p>
                         </div>
-                        <div className='user-selection'>
+                        <div className="user-selection-success">
                             <p>Seçimler</p>
                             <p>25.50₺</p>
                         </div>
-                        <div className='user-amount'>
+                        <div className="user-amount-success">
                             <p>Toplam</p>
                             <p>110.50₺</p>
                         </div>
                     </div>
                 </div>
+
             </div>
             <Footer />
         </div>

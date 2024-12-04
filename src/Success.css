@@ -62,7 +62,7 @@
     line-height: 20px;
 }
 
-.order-summary {
+.order-summary-success {
     padding-top: 15px;
     padding-left: 600px;
     width: 20%;
@@ -71,7 +71,7 @@
 
 }
 
-.order-summary-info {
+.order-summary-info-success {
     border: 1px solid rgb(215, 213, 213);
     border-radius: 6px;
     display: flex;
@@ -81,7 +81,7 @@
     margin-top: 50px;
 }
 
-.order-total {
+.order-total-success {
     font-weight: bold;
     font-size: 1.2rem;
     color: white;
@@ -90,21 +90,21 @@
 
 }
 
-.user-selection,
-.user-amount {
+.user-selection-success,
+.user-amount-success {
     display: flex;
     justify-content: space-between;
     line-height: 10px;
 
 }
 
-.user-selection {
+.user-selection-success {
     color: white;
     font-weight: 600;
     gap: 100px;
 }
 
-.user-amount {
+.user-amount-success {
     color: white;
     font-weight: 600;
     gap: 100px;

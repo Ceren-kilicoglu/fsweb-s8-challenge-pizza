@@ -1,0 +1,203 @@
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    padding-right: 25px;
+}
+
+
+.menu-main {
+    background-color: #FAF7F2;
+    margin: 0;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-left: 400px;
+
+
+}
+
+
+.special-offer-first {
+    flex: 2;
+    position: relative;
+    height: 300px;
+    max-width: 375px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.special-offer-first:hover {
+    transform: scale(1.05);
+
+}
+
+.special-offer-first img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.special-offer-first h2,
+.special-offer-first p,
+.special-offer-first button {
+    position: absolute;
+    color: white;
+
+}
+
+
+.special-offer-first h2 {
+    top: 0;
+    left: 20px;
+    font-size: 38px;
+    max-width: 10px;
+}
+
+.special-offer-first p {
+    top: 100;
+    left: 20px;
+    font-size: 13px;
+}
+
+.special-offer-first button {
+    bottom: 90px;
+    left: 6%;
+    background-color: white;
+    color: #f44336;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+
+.special-offer-second {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.hackathon-menu {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.hackathon-menu:hover {
+    transform: scale(1.05);
+
+}
+
+.fast-delivery {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.fast-delivery:hover {
+    transform: scale(1.05);
+}
+
+.hackathon-menu,
+.fast-delivery {
+    position: relative;
+    height: 145px;
+    width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hackathon-menu img,
+.fast-delivery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hackathon-menu p,
+.fast-delivery p,
+.hackathon-menu button,
+.fast-delivery button {
+    position: absolute;
+    color: white;
+}
+
+.hackathon-menu p {
+    font-size: 20px;
+    font-weight: 600%;
+    max-width: 140px;
+    left: 10px;
+    top: 0;
+
+}
+
+.fast-delivery p {
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 160px;
+    left: 10px;
+    top: 0;
+    color: black
+}
+
+.fast-delivery p span {
+    color: #CE2829;
+
+}
+
+.hackathon-menu button,
+.fast-delivery button {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.hackathon-menu button:hover,
+.fast-delivery button:hover {
+    background-color: #dddddd;
+}
