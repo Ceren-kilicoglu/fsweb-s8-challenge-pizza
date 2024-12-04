@@ -7,6 +7,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
+
 function PizzaForm() {
     const [size, setSize] = useState('');
     const [crust, setCrust] = useState('');
@@ -21,6 +22,7 @@ function PizzaForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isFormValid, setIsFormValid] = useState(true);
     const [name, setName] = useState('Ceren');
+
 
 
     const availableToppings = [
@@ -105,6 +107,7 @@ function PizzaForm() {
             .then((response) => {
                 console.log('API Yanıtı:', response.data);
                 setIsSubmitting(false);
+
                 history.push('/success');
             })
             .catch((error) => {
@@ -117,6 +120,7 @@ function PizzaForm() {
     useEffect(() => {
         if (hasAttemptedSubmit) {
             validateForm();
+
         }
     }, [name, toppings, size, crust, quantity]);
 
