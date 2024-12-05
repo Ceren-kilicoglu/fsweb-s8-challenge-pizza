@@ -32,8 +32,8 @@ function PizzaForm() {
     const history = useHistory();
 
     // Toppings seçimi
-    function toppingOption(topping, isChecked) {
-        if (isChecked) {
+    function toppingOption(topping, Checked) {
+        if (Checked) {
             if (toppings.length < 10) {
                 setToppings([...toppings, topping]);
             }
@@ -108,8 +108,12 @@ function PizzaForm() {
                 console.log('API Yanıtı:', response.data);
                 setIsSubmitting(false);
 
-                history.push('/success');
+                history.push({
+                    pathname: '/success',
+                    state: { order }, // pass the order as state
+                });
             })
+
             .catch((error) => {
                 console.error('API Hatası:', error);
                 setIsSubmitting(false);
@@ -157,17 +161,18 @@ function PizzaForm() {
                 <form onSubmit={handleSubmit}>
                     <div className="selection-row">
                         <label>
-                            <h4>Boyut Seç  </h4>
+                            <h4>Boyut Seç</h4>
                             <div className="options-column">
-                                {['Küçük', 'Orta', 'Büyük'].map((option) => (
-                                    <label key={option}>
+                                {['S', 'M', 'L'].map((option) => (
+                                    <label key={option} className="size-option">
                                         <input
-                                            type="checkbox"
+                                            type="radio"
+                                            name="size"
                                             value={option}
                                             checked={size === option}
                                             onChange={(e) => setSize(e.target.value)}
                                         />
-                                        {option}
+                                        <span>{option}</span>
                                     </label>
                                 ))}
                             </div>
@@ -177,7 +182,7 @@ function PizzaForm() {
                             <div className='select-row'>
                                 <h4>Hamur Seç  </h4>
                                 <select value={crust} onChange={(e) => setCrust(e.target.value)}>
-                                    <option value="Hamur Kalınlığı-">Hamur Kalınlığı</option>
+                                    <option value="Hamur Kalınlığı-">--Hamur Kalınlığı--</option>
                                     <option value="İnce">İnce</option>
                                     <option value="Kalın">Kalın</option>
                                 </select>
@@ -186,22 +191,27 @@ function PizzaForm() {
                         </label>
                     </div>
 
-                    <h4>Ek Malzemeler</h4>
-                    <p className='option-number'>En az 4 adet, en fazla 10 adet malzeme seçebilirsiniz.  5₺ </p>
-                    <div className="toppings-grid">
-                        {availableToppings.map((topping) => (
-                            <label key={topping}>
-                                <input
-                                    type="checkbox"
-                                    value={topping}
-                                    checked={toppings.includes(topping)}
-                                    onChange={(e) => toppingOption(topping, e.target.checked)}
-                                />
-                                {topping}
-                            </label>
-                        ))}
+                    <div className="toppings-section">
+                        <h4>Ek Malzemeler</h4>
+                        <p className="option-number">En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
+                        <div className="toppings-grid">
+                            {availableToppings.map((topping, index) => (
+                                <label key={index} className="topping-option">
+                                    <input
+                                        type="checkbox"
+                                        name="toppings"
+                                        value={topping}
+                                        checked={toppings.includes(topping)}
+                                        onChange={(e) => toppingOption(topping, e.target.checked)}
+                                    />
+                                    <span className="checkmark"></span>
+                                    <span>{topping}</span>
+                                </label>
+                            ))}
+                        </div>
+                        {hasAttemptedSubmit && toppingsError && <p className="error">{toppingsError}</p>}
+
                     </div>
-                    {hasAttemptedSubmit && toppingsError && <p className="error">{toppingsError}</p>}
 
                     <label className='note-row'>
                         <h4>Sipariş Notu</h4>
@@ -241,8 +251,8 @@ function PizzaForm() {
                             </div>
                         </div>
                     </label>
-                </form>
-            </div>
+                </form >
+            </div >
             <Footer />
         </>
     );
