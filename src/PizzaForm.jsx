@@ -1,6 +1,6 @@
 import React, { useState, useEffect, } from 'react';
-import './pizzaform.css';
-import './header.css';
+import './Pizzaform.css';
+import './Header.css';
 import Header from './Header';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';

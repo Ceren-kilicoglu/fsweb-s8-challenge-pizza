@@ -1,5 +1,5 @@
 import React from 'react';
-import "./menu.css"
+import "./Menu.css"
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Menu = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.css';
+import "./Home.css"
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import Menu from './Menu';
 import Footer from './Footer';
