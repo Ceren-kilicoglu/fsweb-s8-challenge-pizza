@@ -2,26 +2,27 @@
     background-color: rgb(23, 23, 23);
     color: white;
     display: flex;
-    padding: 30px 55px; 
+    padding: 30px 55px;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 
 .adress-info {
     display: flex;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
 .adress-info .icon1 {
     width: 25px;
     height: 25px;
-    padding-top: 5px; /
+    padding-top: 5px;/
 }
 
 .adres {
     max-width: 150px;
-    font-size: 12px; }
+    font-size: 12px;
+}
 
 .mail-adress-info {
     display: flex;
@@ -30,7 +31,7 @@
 .mail-adress-info .icon2 {
     width: 25px;
     height: 25px;
-    padding-top: 5px; 
+    padding-top: 5px;
 }
 
 .telefon-info {
@@ -40,68 +41,70 @@
 .telefon-info .icon3 {
     width: 25px;
     height: 25px;
-    padding-top: 5px; 
+    padding-top: 5px;
 }
 
 
 .footer-info p {
-    font-size: 12px; 
+    font-size: 12px;
     padding-left: 10px;
 }
 
 .footer-menu {
-    padding-left: 50px; 
+    padding-left: 50px;
 }
 
 .footer-menu h2 {
     font-weight: 400;
-    padding-top: 10px; 
-    font-size: 18px; 
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 .footer-menu .menu {
-    line-height: 16px; 
-    padding-top: 5px; 
+    line-height: 16px;
+    padding-top: 5px;
 }
 
 
 .footer-img {
-    padding-left: 50px; 
+    padding-left: 50px;
 }
 
 .instagram-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding-top: 10px;
-} 
+}
 
 .footer-img h2 {
     font-weight: 400;
-    padding-top: 10px; 
-    font-size: 18px; 
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 
 .footer-bottom {
     background-color: rgb(23, 23, 23);
     color: white;
-    padding: 10px 0; 
+    padding: 10px 0;
     margin: 0;
-    
+
 }
-.footer-bottom p{
-    padding-left: 350px;
+
+.footer-bottom p {
+    padding-left: 345px;
 }
 
 
 hr {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    color: rgb(241, 240, 237);
+
+
 }
 
 .footer-info img {
-    display: block; 
-    margin-bottom: 10px; 
- }
+    display: block;
+    margin-bottom: 10px;
+}

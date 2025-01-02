@@ -12,7 +12,7 @@ function Success() {
         <div>
             <div className="order-confirmation">
                 <div className='logo-success'>
-                    <img src='../../Assets/Iteration-1-assets/logo.svg' alt="Teknolojik Yemekler Logosu" />
+                    <img src='../../Iteration-1-assets/logo.svg' alt="Teknolojik Yemekler Logosu" />
                 </div>
                 <div className='success-messages'>
                     <p className='subtitle'>Lezzetin yolda</p>

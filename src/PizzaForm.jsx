@@ -132,7 +132,7 @@ function PizzaForm() {
         <>
             <Header />
             <div className='header-row'>
-                <img src='../../Assets/Iteration-2-aseets/pictures/form-banner.png' alt="header-pizza" className="header-pizza" />
+                <img src='../../Iteration-2-aseets/pictures/form-banner.png' alt="header-pizza" className="header-pizza" />
                 <nav>
                     <ul className="nav-list">
                         <li><Link to="/">Anasayfa</Link></li>

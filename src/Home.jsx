@@ -18,7 +18,7 @@ function HomeBanner() {
             <div className="background">
                 <div className="home-text">
                     <div className='logo-homebanner'>
-                        <img src='../../Assets/Iteration-1-assets/logo.svg' alt="Teknolojik Yemekler Logosu" className="logo" />
+                        <img src='/Iteration-1-assets/logo.svg' alt="Teknolojik Yemekler Logosu" className="logo" />
                     </div>
                     <p>KOD ACIKTIRIR</p>
                     <p>PİZZA, DOYURUR</p>

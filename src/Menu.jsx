@@ -13,17 +13,17 @@ const Menu = () => {
             <header>
                 <nav>
                     <ul>
-                        <img src='../../Assets/Iteration-2-aseets/icons/1.svg' />
+                        <img src='../../Iteration-2-aseets/icons/1.svg' />
                         <li>YENİ! Kore</li>
-                        <img src='../../Assets/Iteration-2-aseets/icons/2.svg' />
+                        <img src='../../Iteration-2-aseets/icons/2.svg' />
                         <li>Pizza</li>
-                        <img src='../../Assets/Iteration-2-aseets/icons/3.svg' />
+                        <img src='../../Iteration-2-aseets/icons/3.svg' />
                         <li>Burger</li>
-                        <img src='../../Assets/Iteration-2-aseets/icons/4.svg' />
+                        <img src='../../Iteration-2-aseets/icons/4.svg' />
                         <li>Kızartmalar</li>
-                        <img src='../../Assets/Iteration-2-aseets/icons/5.svg' />
+                        <img src='../../Iteration-2-aseets/icons/5.svg' />
                         <li>Fast food</li>
-                        <img src='../../Assets/Iteration-2-aseets/icons/6.svg' />
+                        <img src='../../Iteration-2-aseets/icons/6.svg' />
                         <li>Gazlı içecek</li>
                     </ul>
                 </nav>
@@ -32,19 +32,19 @@ const Menu = () => {
                 <section class="menu-main">
                     <div class="featured">
                         <div class="special-offer-first">
-                            <img src="../../Assets/Iteration-2-aseets/cta/kart-1.png" />
+                            <img src="../../Iteration-2-aseets/cta/kart-1.png" />
                             <h2>Özel Lezzetus</h2>
                             <p>Position: Absolute Acı Burger</p>
                             <button onClick={handleClick}>SİPARİŞ VER</button>
                         </div>
                         <div class="special-offer-second">
                             <div class="hackathon-menu">
-                                <img src="../../Assets/Iteration-2-aseets/cta/kart-2.png" />
+                                <img src="../../Iteration-2-aseets/cta/kart-2.png" />
                                 <p>Hackathon Burger Menüsü</p>
                                 <button onClick={handleClick}>SİPARİŞ VER</button>
                             </div>
                             <div class="fast-delivery">
-                                <img src="../../Assets/Iteration-2-aseets/cta/kart-3.png" />
+                                <img src="../../Iteration-2-aseets/cta/kart-3.png" />
                                 <p> <span className='red-color'>Çoooooook</span> hızlı npm gibi kurye</p>
                                 <button onClick={handleClick}>SİPARİŞ VER</button>
                             </div>
@@ -61,18 +61,18 @@ const Menu = () => {
                     <div class='header-menu-second'>
                         <nav>
                             <ul>
-                                <li><img src="../../Assets/Iteration-2-aseets/icons/1.svg" /> Ramen</li>
-                                <li><img src="../../Assets/Iteration-2-aseets/icons/2.svg" /> Pizza</li>
-                                <li><img src="../../Assets/Iteration-2-aseets/icons/3.svg" /> Burger</li>
-                                <li><img src="../../Assets/Iteration-2-aseets/icons/4.svg" /> Kızartmalar</li>
-                                <li><img src="../../Assets/Iteration-2-aseets/icons/5.svg" /> Fast food</li>
-                                <li><img src="../../Assets/Iteration-2-aseets/icons/6.svg" /> Gazlı içecek</li>
+                                <li><img src="../../Iteration-2-aseets/icons/1.svg" /> Ramen</li>
+                                <li><img src="../../Iteration-2-aseets/icons/2.svg" /> Pizza</li>
+                                <li><img src="../../Iteration-2-aseets/icons/3.svg" /> Burger</li>
+                                <li><img src="../../Iteration-2-aseets/icons/4.svg" /> Kızartmalar</li>
+                                <li><img src="../../Iteration-2-aseets/icons/5.svg" /> Fast food</li>
+                                <li><img src="../../Iteration-2-aseets/icons/6.svg" /> Gazlı içecek</li>
                             </ul>
                         </nav>
                     </div>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <img src="../../Assets/Iteration-2-aseets/pictures/food-1.png" alt="Terminal Pizza" />
+                            <img src="../../Iteration-2-aseets/pictures/food-1.png" alt="Terminal Pizza" />
                             <h3>Terminal Pizza</h3>
                             <div className='menu-item-priceinfo'>
                                 <p>4.9</p>
@@ -83,7 +83,7 @@ const Menu = () => {
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="../../Assets/Iteration-2-aseets/pictures/food-2.png" alt="Position Absolute Acı Pizza" />
+                            <img src="../../Iteration-2-aseets/pictures/food-2.png" alt="Position Absolute Acı Pizza" />
                             <h3>Position Absolute Acı Pizza</h3>
                             <div className='menu-item-priceinfo'>
                                 <p>4.9</p>
@@ -94,7 +94,7 @@ const Menu = () => {
                             </div>
                         </div>
                         <div class="menu-item">
-                            <img src="../../Assets/Iteration-2-aseets/pictures/food-3.png" alt="useEffect Tavuklu Burger" />
+                            <img src="../../Iteration-2-aseets/pictures/food-3.png" alt="useEffect Tavuklu Burger" />
                             <h3>useEffect Tavuklu Burger</h3>
                             <div className='menu-item-priceinfo'>
                                 <p>4.9</p>
