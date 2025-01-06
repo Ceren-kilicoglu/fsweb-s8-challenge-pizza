@@ -434,6 +434,18 @@ label {
         text-align: center;
     }
 
+    .pizza-form {
+        padding: 1px;
+        width: 100%;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
     .header-row img {
         width: 425px;
     }
