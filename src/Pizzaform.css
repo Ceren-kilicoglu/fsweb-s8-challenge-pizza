@@ -1,4 +1,3 @@
-/* Varsayılan Web Görünümü */
 .nav-list a {
     text-decoration: none;
     color: black;
@@ -60,7 +59,7 @@
     text-align: left;
 }
 
-/*Pizza Form */
+
 .pizza-form {
     background-color: white;
     margin: 10px auto;
@@ -99,7 +98,7 @@ h4::after {
     margin-bottom: 7px;
 }
 
-/*Boyut Seç*/
+
 .pizza-form .options-column {
     display: flex;
     flex-direction: center;
@@ -114,7 +113,7 @@ h4::after {
     align-items: center;
 }
 
-/* Boyut Seç Butonları */
+
 .size-option input[type="radio"] {
     display: none;
 }
@@ -138,7 +137,7 @@ h4::after {
     color: black;
 }
 
-/*Hamur Tipi Bölümü*/
+
 .pizza-form select {
     padding: 15px;
     width: 100%;
@@ -149,7 +148,7 @@ h4::after {
     background-color: #FAF7F2;
 }
 
-/*Topping Bölümü*/
+
 .toppings-section {
     text-align: left;
 }
@@ -172,7 +171,7 @@ h4::after {
     margin-top: 25px;
 }
 
-/* The container */
+
 .topping-option {
     display: block;
     position: relative;
@@ -242,7 +241,7 @@ h4::after {
     transform: rotate(45deg);
 }
 
-/*Note*/
+
 .note-row {
     padding: 25px 0;
 }
@@ -371,7 +370,7 @@ label {
     width: 100%;
 }
 
-/* Mobil ve Tablet Cihazlar İçin */
+
 @media (max-width: 768px) {
     .header-row h2 {
         padding-right: 0;

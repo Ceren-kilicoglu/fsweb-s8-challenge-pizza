@@ -1,3 +1,4 @@
+/* Base styles for the footer */
 .footer-row {
     background-color: rgb(23, 23, 23);
     color: white;
@@ -12,7 +13,9 @@
     padding-top: 10px;
 }
 
-.adress-info .icon1 {
+.adress-info .icon1,
+.mail-adress-info .icon2,
+.telefon-info .icon3 {
     width: 25px;
     height: 25px;
     padding-top: 5px;
@@ -23,24 +26,9 @@
     font-size: 12px;
 }
 
-.mail-adress-info {
-    display: flex;
-}
-
-.mail-adress-info .icon2 {
-    width: 25px;
-    height: 25px;
-    padding-top: 5px;
-}
-
+.mail-adress-info,
 .telefon-info {
     display: flex;
-}
-
-.telefon-info .icon3 {
-    width: 25px;
-    height: 25px;
-    padding-top: 5px;
 }
 
 .footer-info p {
@@ -100,6 +88,107 @@ hr {
     display: block;
     margin-bottom: 10px;
 }
+
+/* Media Queries for responsiveness */
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+    .footer-row {
+        padding: 20px 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footer-menu h2 {
+        font-size: 16px;
+    }
+
+    .footer-menu .menu {
+        line-height: 20px;
+    }
+
+    .footer-img {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .instagram-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom p {
+        padding-left: 20px;
+        text-align: center;
+    }
+}
+
+/* Mobile (portrait) */
+@media (max-width: 480px) {
+    .footer-row {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adress-info,
+    .mail-adress-info,
+    .telefon-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-menu h2 {
+        font-size: 14px;
+    }
+
+    .footer-menu .menu {
+        line-height: 20px;
+    }
+
+    .footer-img {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .instagram-images {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom p {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .adress-info .icon1,
+    .mail-adress-info .icon2,
+    .telefon-info .icon3 {
+        width: 20px;
+        height: 20px;
+        padding-top: 0;
+    }
+
+    .adres {
+        max-width: 100px;
+        font-size: 10px;
+    }
+
+    .footer-info p {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+}
+
 
 
 @media (max-width: 320px) {

@@ -249,6 +249,10 @@ nav ul li {
     border-radius: 12px;
 }
 
+.special-offer-first {
+    width: 350px;
+}
+
 .menu-item h3 {
     font-size: 18px;
     color: #333;
@@ -281,8 +285,6 @@ nav ul li {
     transform: scale(1.05);
 }
 
-/* Tablet ekranlar için duyarlılık */
-
 
 
 @media (max-width: 767px) {
@@ -294,7 +296,6 @@ nav ul li {
     nav ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* Dört sütun */
         gap: 15px;
     }
 
