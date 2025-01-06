@@ -1,13 +1,11 @@
+/* Default Styles */
 header {
     background-color: white;
     color: black;
     padding: 10px;
     display: flex;
     justify-content: center;
-
-
 }
-
 
 nav ul {
     list-style: none;
@@ -17,7 +15,6 @@ nav ul {
     margin: 0;
 }
 
-
 nav ul li {
     display: flex;
     align-items: center;
@@ -25,7 +22,6 @@ nav ul li {
     cursor: pointer;
     padding-right: 25px;
 }
-
 
 .menu-main {
     background-color: #FAF7F2;
@@ -39,10 +35,7 @@ nav ul li {
     gap: 10px;
     padding-top: 50px;
     padding-left: 400px;
-
-
 }
-
 
 .special-offer-first {
     flex: 2;
@@ -59,7 +52,6 @@ nav ul li {
 
 .special-offer-first:hover {
     transform: scale(1.05);
-
 }
 
 .special-offer-first img {
@@ -74,9 +66,7 @@ nav ul li {
 .special-offer-first button {
     position: absolute;
     color: white;
-
 }
-
 
 .special-offer-first h2 {
     top: 0;
@@ -103,31 +93,19 @@ nav ul li {
     border-radius: 20px;
 }
 
-
-
 .special-offer-second {
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 20px;
-
 }
 
-.hackathon-menu {
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.hackathon-menu:hover {
-    transform: scale(1.05);
-
-}
-
+.hackathon-menu,
 .fast-delivery {
     transition: transform 0.3s ease-in-out;
-
 }
 
+.hackathon-menu:hover,
 .fast-delivery:hover {
     transform: scale(1.05);
 }
@@ -142,9 +120,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 .hackathon-menu img,
 .fast-delivery img {
@@ -164,11 +140,10 @@ nav ul li {
 
 .hackathon-menu p {
     font-size: 20px;
-    font-weight: 600%;
+    font-weight: 600;
     max-width: 140px;
     left: 10px;
     top: 0;
-
 }
 
 .fast-delivery p {
@@ -177,12 +152,11 @@ nav ul li {
     max-width: 160px;
     left: 10px;
     top: 0;
-    color: black
+    color: black;
 }
 
 .fast-delivery p span {
     color: #CE2829;
-
 }
 
 .hackathon-menu button,
@@ -199,13 +173,10 @@ nav ul li {
     border-radius: 8px;
 }
 
-
-
 .popular-menus {
     text-align: center;
     padding-top: 35px;
     line-height: 13px;
-
 }
 
 .popular-menus-text p {
@@ -270,7 +241,6 @@ nav ul li {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
 }
 
 .menu-item img {
@@ -289,7 +259,6 @@ nav ul li {
 .menu-item-priceinfo {
     display: flex;
     justify-content: space-between;
-
 }
 
 .menu-item-priceinfo p {
@@ -297,7 +266,6 @@ nav ul li {
     color: #555;
     font-weight: 700;
     padding-left: 30px;
-
 }
 
 .menu-item-priceinfo-price p {
@@ -308,9 +276,148 @@ nav ul li {
 
 .menu-item {
     transition: transform 0.3s ease-in-out;
-
 }
 
 .menu-item:hover {
     transform: scale(1.05);
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 767px) {
+    header {
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .featured {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .special-offer-first {
+        height: 250px;
+        max-width: 300px;
+    }
+
+    .special-offer-first h2 {
+        font-size: 28px;
+    }
+
+    .special-offer-first p {
+        font-size: 12px;
+    }
+
+    .special-offer-first button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .special-offer-second {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hackathon-menu,
+    .fast-delivery {
+        height: 120px;
+        width: 280px;
+    }
+
+    .hackathon-menu p,
+    .fast-delivery p {
+        font-size: 16px;
+    }
+
+    .hackathon-menu button,
+    .fast-delivery button {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .menu-item h3 {
+        font-size: 16px;
+    }
+
+    .menu-item-priceinfo p {
+        font-size: 12px;
+    }
+
+    .menu-item-priceinfo-price p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet cihazlar için */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .featured {
+        padding-left: 200px;
+    }
+
+    .special-offer-first {
+        height: 275px;
+        max-width: 340px;
+    }
+
+    .special-offer-first h2 {
+        font-size: 32px;
+    }
+
+    .special-offer-first p {
+        font-size: 12px;
+    }
+
+    .special-offer-first button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .hackathon-menu,
+    .fast-delivery {
+        height: 135px;
+        width: 300px;
+    }
+
+    .hackathon-menu p,
+    .fast-delivery p {
+        font-size: 18px;
+    }
+
+    .hackathon-menu button,
+    .fast-delivery button {
+        font-size: 11px;
+        padding: 8px 14px;
+    }
+
+    .menu-items {
+        gap: 20px;
+    }
+
+    .menu-item {
+        width: 200px;
+    }
+
+    .menu-item h3 {
+        font-size: 17px;
+    }
+
+    .menu-item-priceinfo p {
+        font-size: 13px;
+    }
+
+    .menu-item-priceinfo-price p {
+        font-size: 17px;
+    }
 }
