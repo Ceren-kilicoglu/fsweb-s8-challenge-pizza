@@ -11,7 +11,7 @@ const Menu = () => {
     return (
         <div className="menu-row">
             <header>
-                <nav>
+                <nav class="menus">
                     <ul>
                         <img src='../../Iteration-2-aseets/icons/1.svg' />
                         <li>YENİ! Kore</li>
@@ -59,7 +59,7 @@ const Menu = () => {
                         <h2>Acıktıran Kodlara Doyuran Lezzetler</h2>
                     </div>
                     <div class='header-menu-second'>
-                        <nav>
+                        <nav class="menus">
                             <ul>
                                 <li><img src="../../Iteration-2-aseets/icons/1.svg" /> Ramen</li>
                                 <li><img src="../../Iteration-2-aseets/icons/2.svg" /> Pizza</li>

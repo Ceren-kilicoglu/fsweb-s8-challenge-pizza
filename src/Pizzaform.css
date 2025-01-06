@@ -1,25 +1,14 @@
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    padding-right: 325px;
-
-
-}
-
-
+/* Varsayılan Web Görünümü */
 .nav-list a {
     text-decoration: none;
     color: black;
     font-size: 15px;
     transition: color 0.1s ease;
-
-
 }
 
 .nav-list a:hover {
     color: #CE2829;
     font-weight: bold;
-
 }
 
 .header-row {
@@ -32,7 +21,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 .header-row h2 {
@@ -40,10 +28,7 @@
     font-weight: 500;
     padding-right: 225px;
     margin: 10px 0;
-
 }
-
-
 
 .price {
     color: black;
@@ -53,7 +38,6 @@
     width: 100%;
     margin: 0 0;
     padding-left: 50px;
-
 }
 
 .price-like {
@@ -63,8 +47,6 @@
     font-size: 15px;
     padding-left: 300px;
     padding-top: 17px;
-
-
 }
 
 .description {
@@ -77,7 +59,6 @@
     line-height: 1.5;
     text-align: left;
 }
-
 
 /*Pizza Form */
 .pizza-form {
@@ -131,13 +112,11 @@ h4::after {
 .pizza-form .options-column label {
     display: flex;
     align-items: center;
-
 }
 
 /* Boyut Seç Butonları */
 .size-option input[type="radio"] {
     display: none;
-
 }
 
 .size-option span {
@@ -159,23 +138,20 @@ h4::after {
     color: black;
 }
 
-
 /*Hamur Tipi Bölümü*/
 .pizza-form select {
     padding: 15px;
     width: 100%;
     margin-top: 5px;
-    border: 1px solid#FAF7F2;
+    border: 1px solid #FAF7F2;
     border-radius: 5px;
     box-sizing: border-box;
     background-color: #FAF7F2;
-
 }
 
-/*ToppingBölümü*/
+/*Topping Bölümü*/
 .toppings-section {
     text-align: left;
-
 }
 
 .option-number {
@@ -210,9 +186,7 @@ h4::after {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
-
 
 .topping-option input {
     position: absolute;
@@ -220,9 +194,7 @@ h4::after {
     cursor: pointer;
     height: 0;
     width: 0;
-
 }
-
 
 .checkmark {
     position: absolute;
@@ -232,26 +204,21 @@ h4::after {
     width: 48px;
     background-color: #FAF7F2;
     border-radius: 10px;
-
-
 }
 
 .topping-option:hover input~.checkmark {
     background-color: #FAF7F2;
 }
 
-
 .topping-option input:checked~.checkmark {
     background-color: #FDC913;
 }
-
 
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-
 
 .topping-option input:checked~.checkmark:after {
     display: block;
@@ -261,9 +228,7 @@ h4::after {
     left: 12px;
     font-size: 25px;
     color: black;
-
 }
-
 
 .topping-option.checkmark:after {
     left: 15px;
@@ -276,7 +241,6 @@ h4::after {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 
 /*Note*/
 .note-row {
@@ -292,17 +256,11 @@ h4::after {
     background-color: #FAF7F2;
     border-radius: 8px;
     resize: none;
-
-
-
 }
 
 .pizza-form textarea::placeholder {
     color: #5F5F5F;
-
 }
-
-
 
 .pizza-form .order {
     display: flex;
@@ -315,7 +273,6 @@ h4::after {
     display: flex;
     align-items: center;
     margin-top: -175px;
-
 }
 
 .pizza-form .quantity-control button {
@@ -365,7 +322,6 @@ h4::after {
 .pizza-form .user-amount {
     display: flex;
     justify-content: space-around;
-
 }
 
 .pizza-form .user-selection {
@@ -406,9 +362,7 @@ hr {
     border: none;
     border-top: 2px solid rgb(211, 209, 209);
     margin: 20px 0;
-
     max-width: 700px;
-
 }
 
 label {
@@ -417,44 +371,107 @@ label {
     width: 100%;
 }
 
-
+/* Mobil ve Tablet Cihazlar İçin */
 @media (max-width: 768px) {
-    .nav-list {
-        flex-direction: column;
+    .header-row h2 {
         padding-right: 0;
-    }
-
-    .header-row {
-        padding: 20px;
-        text-align: center;
+        font-size: 1.5rem;
     }
 
     .price {
-        font-size: 24px;
-        padding-left: 0;
+        font-size: 1.5rem;
+        padding-left: 10px;
     }
 
     .price-like {
-        flex-direction: column;
-        padding-left: 0;
-        padding-top: 10px;
+        padding-left: 10px;
+        gap: 15px;
+        font-size: 1rem;
     }
 
     .description {
-        width: 100%;
-        padding-left: 0;
+        width: 90%;
+        padding-left: 10px;
+        font-size: 1rem;
     }
 
     .pizza-form {
         padding-left: 0;
     }
 
-    .quantity-control {
+    .pizza-form .quantity-control {
         margin-top: 0;
-        justify-content: center;
     }
 
     .pizza-form .order-button {
-        width: 100%;
+        width: 90%;
+    }
+
+    .pizza-form .order-summary-info {
+        padding: 15px;
+    }
+
+    .pizza-form .order-total {
+        margin-left: 10px;
+    }
+
+    .toppings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .header-row {
+        background-color: #FAF7F2;
+        padding: 1px;
+        width: 120%;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-row img {
+        width: 425px;
+    }
+
+    .nav-list li {
+        width: 100px;
+    }
+
+    .header-row h2 {
+        font-size: 1.2rem;
+        width: 250px;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .price-like {
+        font-size: 0.8rem;
+        gap: 15px;
+
+    }
+
+    .pizza-form {
+        padding-left: 20px;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .pizza-form h4 {
+        font-size: 1rem;
+    }
+
+    .pizza-form .order-button {
+        font-size: 0.9rem;
+        padding: 5px 7px;
     }
 }
