@@ -10,8 +10,14 @@
     font-weight: bold;
 }
 
+.header-row,
+.pizza-form {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 .header-row {
-    background-color: #FAF7F2;
     padding: 10px;
     width: 100%;
     margin: 25px auto;
@@ -20,6 +26,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 100%;
 }
 
 .header-row h2 {
@@ -69,6 +76,7 @@
     justify-content: center;
     text-align: center;
     padding-left: 50px;
+    max-width: 100%;
 }
 
 .selection-row {
@@ -419,35 +427,20 @@ label {
     }
 }
 
-
 @media (max-width: 480px) {
-
     .header-row {
-        background-color: #FAF7F2;
-        padding: 1px;
-        width: 100%;
-        margin: 25px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        padding: 10px;
     }
 
     .pizza-form {
-        padding: 1px;
+        padding: 10px;
         width: 100%;
-        margin: 25px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
     }
 
     .header-row img {
-        width: 425px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     .nav-list li {
@@ -456,7 +449,7 @@ label {
 
     .header-row h2 {
         font-size: 1.2rem;
-        width: 250px;
+        width: 100%;
     }
 
     .price {
@@ -466,23 +459,10 @@ label {
     .price-like {
         font-size: 0.8rem;
         gap: 15px;
-
-    }
-
-    .pizza-form {
-        padding-left: 20px;
-    }
-
-    .description {
-        font-size: 0.8rem;
     }
 
     .pizza-form h4 {
         font-size: 1rem;
-    }
-
-    .order {
-        padding-right: 0;
     }
 
     .pizza-form .order-button {
