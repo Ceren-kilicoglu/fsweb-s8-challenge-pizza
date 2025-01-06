@@ -189,7 +189,7 @@ hr {
 
 @media (max-width: 470px) {
     .footer {
-        width: 350px;
+        width: 100%;
     }
 
     .footer-row {

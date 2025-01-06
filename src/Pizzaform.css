@@ -439,7 +439,7 @@ label {
     }
 
     .nav-list li {
-        width: 100px;
+        width: 150px;
     }
 
     .header-row h2 {
@@ -467,6 +467,10 @@ label {
 
     .pizza-form h4 {
         font-size: 1rem;
+    }
+
+    .order {
+        padding-right: 0;
     }
 
     .pizza-form .order-button {
