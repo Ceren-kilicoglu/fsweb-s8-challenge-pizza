@@ -428,6 +428,10 @@ label {
 }
 
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header-row {
         padding: 10px;
 
