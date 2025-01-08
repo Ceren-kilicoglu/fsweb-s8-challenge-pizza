@@ -488,16 +488,13 @@ label {
 
     }
 
-    .toppings-section .checkmark {
-        width: 35px;
-        height: 35px;
-        margin-top: 10px;
-    }
+
 
     .note-row {
-        max-width: 100%;
+        max-width: 85%;
         padding-left: 15px;
     }
+
 
     .order {
         width: 100%;
@@ -508,14 +505,11 @@ label {
         width: 125px;
     }
 
-    .order-summary-info {
-        width: 125px;
-    }
 
     .pizza-form .order-button {
         font-size: 0.9rem;
         padding: 5px 7px;
-        width: 140px;
+
 
     }
 }
