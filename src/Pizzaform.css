@@ -428,18 +428,27 @@ label {
 }
 
 @media (max-width: 480px) {
+    body {
+        width: min-content;
+        overflow-x: hidden;
+    }
+
+
+
     .header-row {
-        padding: 10px;
+        overflow: hidden;
+        width: min-content;
+
     }
 
     .pizza-form {
-        padding: 10px;
-        width: 100%;
+
+        width: min-content;
     }
 
     .header-row img {
         width: 100%;
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 
