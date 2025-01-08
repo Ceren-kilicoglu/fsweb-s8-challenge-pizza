@@ -428,18 +428,16 @@ label {
 }
 
 @media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
+
 
     .header-row {
-        padding: 10px;
+        width: 100%;
 
 
     }
 
     .pizza-form {
-        padding: 10px;
+        width: 100%;
 
     }
 
@@ -450,34 +448,74 @@ label {
 
     .header-row img {
         width: 90%;
-        max-width: auto;
-        height: auto;
     }
 
     .nav-list li {
-        width: 150px;
+        width: max-content
     }
 
     .header-row h2 {
         font-size: 1.2rem;
-        width: 100%;
+        margin-right: 85px;
+        width: max-content;
     }
 
     .price {
         font-size: 1.2rem;
+        width: max-content;
     }
 
     .price-like {
         font-size: 0.8rem;
         gap: 15px;
+        width: max-content;
     }
 
     .pizza-form h4 {
         font-size: 1rem;
+        width: max-content;
+    }
+
+    .selection-row {
+        width: 100%;
+        margin-left: 15px;
+
+    }
+
+    .toppings-section {
+        width: 100%;
+        margin-left: 15px;
+
+    }
+
+    .toppings-section .checkmark {
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .note-row {
+        max-width: 100%;
+        padding-left: 15px;
+    }
+
+    .order {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .quantity-control {
+        width: 125px;
+    }
+
+    .order-summary-info {
+        width: 125px;
     }
 
     .pizza-form .order-button {
         font-size: 0.9rem;
         padding: 5px 7px;
+        width: 140px;
+
     }
 }
