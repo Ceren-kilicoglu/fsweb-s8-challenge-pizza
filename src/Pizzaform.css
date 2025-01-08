@@ -482,11 +482,22 @@ label {
 
     }
 
+    .selection-row .options-column {
+        width: 40px;
+    }
+
+    .selection-row .select-row {
+        width: max-content;
+        margin-right: 40px;
+    }
+
     .toppings-section {
         width: 100%;
         margin-left: 15px;
 
     }
+
+
 
 
 
@@ -505,10 +516,13 @@ label {
         width: 125px;
     }
 
+    .order-summary-info {
+        width: 75%;
+    }
 
     .pizza-form .order-button {
         font-size: 0.9rem;
-        padding: 5px 7px;
+        padding: 5px 1px;
 
 
     }
